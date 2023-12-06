@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="icon" href="icon.png">
+<title>Главная</title>
+<head>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+        <header class="p-3 text-bg-dark">
+            <div class="container-fluid">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a class="navbar-brand" href="index.html"><img src="ii.png" class="w-25 rounded-45" alt="logo"></a>
+                        <ul class="nav col-10 col-lg-auto me-lg-auto mb-2 justify-content-center">
+                  <li id ="navigation"><a href="index.html" class="nav-link px-2 text-white" >Главная</a></li>
+                  <li id ="navigation"><a href="user.html" class="nav-link px-2 text-white">Личный кабинет</a></li>
+                  <li id ="navigation"><a href="addpost.html" class="nav-link px-2 text-white">Добавить обьявление</a></li>
+                  <li id ="navigation"><a href="" class="nav-link px-2 text-white">Поиск по объявлениям</a></li>
+                </ul>
+
+
+                <form id="search" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" list="pets" placeholder="Поиск..." >
+                    <datalist id="pets">
+                      <option value="Кошка">
+                      </option><option value="Собака">
+                      </option><option value="Крыса">
+                      </option><option value="Попугай">
+                    </datalist>
+                  </form>
+                  <div class="text-end">
+                    <button type="button" id="loginButton" href="loginin.html" class="btn btn-outline-light me-2">Войти</button>
+                    <button type="button" id="signButton" class="btn btn-warning">Зарегистрироваться</button>
+                  </div>
+                  </div>
+            </div>
+          </header>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+            <!-- Font Awesome -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+          <main>
+<br>
+<br>
+          <div class="container">
+            <h2 class="text-center">Поиск по объявлениям</h2>
+<br>
+<br>
+       
+
+<div class="dropdown">
+    <button onclick="myFunction()" id="region" class="dropbtn" style="font-weight: 600px;">Район</button>
+    <br><br>
+    <div id="myDropdown" class="dropdown-content">
+    <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31" />
+        <label class="form-check-label" for="form2Example31"> Невский </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31" />
+        <label class="form-check-label" for="form2Example31"> Центральный </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31" />
+        <label class="form-check-label" for="form2Example31"> Василеостровский </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31" />
+        <label class="form-check-label" for="form2Example31"> Всеволожский </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31"/>
+        <label class="form-check-label" for="form2Example31"> Кировский </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31"  />
+        <label class="form-check-label" for="form2Example31"> Фрунзенский </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31" />
+        <label class="form-check-label" for="form2Example31"> Приморский</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31"/>
+        <label class="form-check-label" for="form2Example31"> Красносельский </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31"/>
+        <label class="form-check-label" for="form2Example31"> Выборгский </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31"/>
+        <label class="form-check-label" for="form2Example31"> Ломоносовский </label>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="dropdown">
+    <button onclick="myFunction1()" id="status" class="dropbtn">Статус</button>
+    <br><br>
+    <div id="myDropdown1" class="dropdown-content1">
+    <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31" />
+        <label class="form-check-label" for="form2Example31">active </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31" />
+        <label class="form-check-label" for="form2Example31"> onModeration </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input bg-dark" type="checkbox" value="" id="form2Example31" />
+        <label class="form-check-label" for="form2Example31"> archieve </label>
+      </div>
+
+    </div>
+       
+
+  </div>
+
+
+  <div class="dropdown">
+    <button id="poisk" class="dropbtn btn-outline-dark">Поиск</button>
+    <br><br>
+      </div>
+
+
+
+
+
+            <div class="row justify-content-lg-start">
+              <div class="col-12 col-sm-8 col-lg-6">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single_pet">
+                  <div class="pet_thumb"><img src="dog1.png" id="animals" alt="animal"></div>
+
+                  <button type="button" href="postpage.html" id="showButton" class="btn btn-light me-2" style="margin: 10px 10px 10px 10px;">Посмотреть</button>
+              
+                  <div class="single_pet_details_info">
+                    <div class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6 align="left">id:</h6></div>
+                      <div class="col-md-6"><p align="left">348</p></div>
+                      </div>
+          
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Вид животного:</h6></div>
+                        <div class="col-md-6"><p align="left">Собака</p></div>
+                        </div>
+          
+                        <div class="row mt-1" style="max-width: 270px;">
+                          <div class="col-md-6"><h6 align="left">Район:</h6></div>
+                          <div class="col-md-6"><p align="left">Невский</p></div>
+                          </div>
+          
+                          <div  class="row mt-1" style="max-width: 270px;">
+                            <div class="col-md-6"><h6 align="left">Дата:</h6></div>
+                            <div class="col-md-6"><p align="left">04-12-2023</p></div>
+                            </div>
+          
+          
+                            <div  class="row mt-1" style="max-width: 270px;">
+                              <div class="col-md-6"><h6 align="left">Телефон:</h6></div>
+                              <div class="col-md-6"><p align="left">8-921-751-36-21</p></div>
+                              </div>
+          
+          
+                              <div class="row mt-1" style="max-width: 270px;">
+                                <div class="col-md-6"><h6 align="left">Пост размещен</h6></div>
+                                <div align="left" class="col-md-6"><a href="user">Александра Котикова</a></div>
+                                </div>
+
+
+                                <div class="row mt-1" style="max-width: 270px;">
+                                    <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                                    <div align="left" class="col-md-6"><p>active</p></div>
+                                    </div>
+
+
+          
+                                <div class="row mt-1" style="max-width: 270px;">
+                                  <div class="col-md-6"><h6 align="left">Описание:</h6></div>
+                                </div>
+          
+                                <div style="max-width: 270px;">
+                                  <div> <p align="left"> Найден корги! В ночь на 28.10 в районе ул.Лодочной найден корги, мальчик, с хвостом, был без ошейника. Чипирован, есть клеймо.Если кому знаком этот пес ,просьба сообщить по телефону</p>
+                                  </div>
+                                </div>
+          
+          
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single_pet">
+                  <div class="pet_thumb"><img src="homa.png" id="animals" alt="animal"></div>
+                  <button type="button" href="postpage.html" class="btn btn-light me-2" style="margin: 10px 10px 10px 10px;">Посмотреть</button>
+                  <div class="single_pet_details_info">
+                    <div class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6 align="left">id:</h6></div>
+                      <div class="col-md-6"><p align="left">421</p></div>
+                      </div>
+          
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Вид животного:</h6></div>
+                        <div class="col-md-6"><p align="left">Хомячок</p></div>
+                        </div>
+          
+                        <div class="row mt-1" style="max-width: 270px;">
+                          <div class="col-md-6"><h6 align="left">Район:</h6></div>
+                          <div class="col-md-6"><p align="left">Невский</p></div>
+                          </div>
+          
+                          <div  class="row mt-1" style="max-width: 270px;">
+                            <div class="col-md-6"><h6 align="left">Дата:</h6></div>
+                            <div class="col-md-6"><p align="left">03-12-2023</p></div>
+                            </div>
+          
+          
+                            <div  class="row mt-1" style="max-width: 270px;">
+                              <div class="col-md-6"><h6 align="left">Телефон:</h6></div>
+                              <div class="col-md-6"><p align="left">8-921-245-64-23</p></div>
+                              </div>
+          
+          
+                              <div class="row mt-1" style="max-width: 270px;">
+                                <div class="col-md-6"><h6 align="left">Пост размещен</h6></div>
+                                <div align="left" class="col-md-6"><p>Пользователь не зарегистрирован</p></div>
+                                </div>
+          
+                                <div class="row mt-1" style="max-width: 270px;">
+                                    <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                                    <div align="left" class="col-md-6"><p>active</p></div>
+                                    </div>
+
+
+                                <div class="row mt-1" style="max-width: 270px;">
+                                  <div class="col-md-6"><h6 align="left">Описание:</h6></div>
+                                </div>
+          
+                                <div style="max-width: 270px;">
+                                  <div> <p align="left"> Нашли на улице Дыбенко примерно 17:45.
+                                    Пишите если питомец Ваш или Вы хотите завести себе нового друга</p>
+                                  </div>
+                                </div>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single_pet">
+                  <div class="pet_thumb"><img src="kitic1.png" id="animals" alt="animal"></div>
+                  <button type="button" href="postpage.html" class="btn btn-light me-2" style="margin: 10px 10px 10px 10px;">Посмотреть</button>
+
+                  <div class="single_pet_details_info">
+                    <div class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6 align="left">id:</h6></div>
+                      <div class="col-md-6"><p align="left">426</p></div>
+                      </div>
+          
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Вид животного:</h6></div>
+                        <div class="col-md-6"><p align="left">Кошка</p></div>
+                        </div>
+          
+                        <div class="row mt-1" style="max-width: 270px;">
+                          <div class="col-md-6"><h6 align="left">Район:</h6></div>
+                          <div class="col-md-6"><p align="left">Василеостровский</p></div>
+                          </div>
+          
+                          <div  class="row mt-1" style="max-width: 270px;">
+                            <div class="col-md-6"><h6 align="left">Дата:</h6></div>
+                            <div class="col-md-6"><p align="left">30-11-2022</p></div>
+                            </div>
+          
+          
+                            <div  class="row mt-1" style="max-width: 270px;">
+                              <div class="col-md-6"><h6 align="left">Телефон:</h6></div>
+                              <div class="col-md-6"><p align="left">8-921-758-21-56</p></div>
+                              </div>
+          
+          
+                              <div class="row mt-1" style="max-width: 270px;">
+                                <div class="col-md-6"><h6 align="left">Пост размещен</h6></div>
+                                <div align="left" class="col-md-6"><a href="user">Александра Котикова</a></div>
+                                </div>
+          
+                                <div class="row mt-1" style="max-width: 270px;">
+                                    <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                                    <div align="left" class="col-md-6"><p>active</p></div>
+                                    </div>
+
+
+                                <div class="row mt-1" style="max-width: 270px;">
+                                  <div class="col-md-6"><h6 align="left">Описание:</h6></div>
+                                </div>
+          
+                                <div style="max-width: 270px;">
+                                  <div> <p align="left"> Присмотритесь на этого плюшевого пушистика. Я пристраиваю его в хорошие руки. Кот, мальчик, молодой, очень игривый, очень общительный, ласковый. Не прихотлив в еде, ходит в лоток, здоровый, стерилизованный. Ищу ему новую семью.</p>
+                                  </div>
+                                </div>
+          
+          
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single_pet">
+                  <div class="pet_thumb"><img src="rabbit.png" id="animals" alt="animal"></div>
+                  <button type="button" href="postpage.html" class="btn btn-light me-2" style="margin: 10px 10px 10px 10px;">Посмотреть</button>
+                  <div class="single_pet_details_info">
+                    <div class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6 align="left">id:</h6></div>
+                      <div class="col-md-6"><p align="left">458</p></div>
+                      </div>
+          
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Вид животного:</h6></div>
+                        <div class="col-md-6"><p align="left">Кролик</p></div>
+                        </div>
+          
+                        <div class="row mt-1" style="max-width: 270px;">
+                          <div class="col-md-6"><h6 align="left">Район:</h6></div>
+                          <div class="col-md-6"><p align="left">Всеволожский</p></div>
+                          </div>
+          
+                          <div  class="row mt-1" style="max-width: 270px;">
+                            <div class="col-md-6"><h6 align="left">Дата:</h6></div>
+                            <div class="col-md-6"><p align="left">04-10-2023</p></div>
+                            </div>
+          
+          
+                            <div  class="row mt-1" style="max-width: 270px;">
+                              <div class="col-md-6"><h6 align="left">Телефон:</h6></div>
+                              <div class="col-md-6"><p align="left">8-542-35-96-23</p></div>
+                              </div>
+          
+          
+                              <div class="row mt-1" style="max-width: 270px;">
+                                <div class="col-md-6"><h6 align="left">Пост размещен</h6></div>
+                                <div align="left" class="col-md-6"><a href="#">Кристина Михайлова</a></div>
+                                </div>
+          
+                                <div class="row mt-1" style="max-width: 270px;">
+                                    <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                                    <div align="left" class="col-md-6"><p>active</p></div>
+                                    </div>
+
+
+          
+                                <div class="row mt-1" style="max-width: 270px;">
+                                  <div class="col-md-6"><h6 align="left">Описание:</h6></div>
+                                </div>
+          
+                                <div style="max-width: 270px;">
+                                  <div> <p align="left"> В парке найден кролик. Себе взять не могу. Может, нужен кому? Чистенький. Но задние лапы без шерсти. </p>
+                                  </div>
+                                </div>
+          
+          
+                  </div>
+                </div>
+              </div>
+             
+                  </div>    <!--row!-->
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                      <div class="single_pet">
+                        <div class="pet_thumb"><img src="chikens.png" id="animals" alt="animal"></div>
+      
+                        <button type="button" href="#" id="showButton" class="btn btn-light me-2" style="margin: 10px 10px 10px 10px;">Посмотреть</button>
+                    
+                        <div class="single_pet_details_info">
+                          <div class="row mt-1" style="max-width: 270px;">
+                            <div class="col-md-6"><h6 align="left">id:</h6></div>
+                            <div class="col-md-6"><p align="left">431</p></div>
+                            </div>
+                
+                            <div class="row mt-1" style="max-width: 270px;">
+                              <div class="col-md-6"><h6 align="left">Вид животного:</h6></div>
+                              <div class="col-md-6"><p align="left">Птица</p></div>
+                              </div>
+                
+                              <div class="row mt-1" style="max-width: 270px;">
+                                <div class="col-md-6"><h6 align="left">Район:</h6></div>
+                                <div class="col-md-6"><p align="left">Кировский</p></div>
+                                </div>
+                
+                                <div  class="row mt-1" style="max-width: 270px;">
+                                  <div class="col-md-6"><h6 align="left">Дата:</h6></div>
+                                  <div class="col-md-6"><p align="left">15-11-2023</p></div>
+                                  </div>
+                
+                
+                                  <div  class="row mt-1" style="max-width: 270px;">
+                                    <div class="col-md-6"><h6 align="left">Телефон:</h6></div>
+                                    <div class="col-md-6"><p align="left">8-111-243-28-76</p></div>
+                                    </div>
+                
+                
+                                    <div class="row mt-1" style="max-width: 270px;">
+                                      <div class="col-md-6"><h6 align="left">Пост размещен</h6></div>
+                                      <div align="left" class="col-md-6"><a href="#">Александр Пучков</a></div>
+                                      </div>
+                
+                                      <div class="row mt-1" style="max-width: 270px;">
+                                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                                        <div align="left" class="col-md-6"><p>active</p></div>
+                                        </div>
+
+
+
+                                      <div class="row mt-1" style="max-width: 270px;">
+                                        <div class="col-md-6"><h6 align="left">Описание:</h6></div>
+                                      </div>
+                
+                                      <div style="max-width: 270px;">
+                                        <div> <p align="left"> Найдены два крохотных цыпленка. Кому нужны или кто знает владельца звоните по телефону</p>
+                                        </div>
+                                      </div>
+                
+                
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                      <div class="single_pet">
+                        <div class="pet_thumb"><img src="jungaric.png" id="animals" alt="animal"></div>
+                        <button type="button" href="postpage.html" class="btn btn-light me-2" style="margin: 10px 10px 10px 10px;">Посмотреть</button>
+                        <div class="single_pet_details_info">
+                          <div class="row mt-1" style="max-width: 270px;">
+                            <div class="col-md-6"><h6 align="left">id:</h6></div>
+                            <div class="col-md-6"><p align="left">403</p></div>
+                            </div>
+                
+                            <div class="row mt-1" style="max-width: 270px;">
+                              <div class="col-md-6"><h6 align="left">Вид животного:</h6></div>
+                              <div class="col-md-6"><p align="left">Хомячок</p></div>
+                              </div>
+                
+                              <div class="row mt-1" style="max-width: 270px;">
+                                <div class="col-md-6"><h6 align="left">Район:</h6></div>
+                                <div class="col-md-6"><p align="left">Центральный</p></div>
+                                </div>
+                
+                                <div  class="row mt-1" style="max-width: 270px;">
+                                  <div class="col-md-6"><h6 align="left">Дата:</h6></div>
+                                  <div class="col-md-6"><p align="left">04-12-2023</p></div>
+                                  </div>
+                
+                
+                                  <div  class="row mt-1" style="max-width: 270px;">
+                                    <div class="col-md-6"><h6 align="left">Телефон:</h6></div>
+                                    <div class="col-md-6"><p align="left">8-978-214-57-17</p></div>
+                                    </div>
+                
+                
+                                    <div class="row mt-1" style="max-width: 270px;">
+                                      <div class="col-md-6"><h6 align="left">Пост размещен</h6></div>
+                                      <div align="left" class="col-md-6"><p>Пользователь не зарегистрирован</p></div>
+                                      </div>
+                
+
+                                      <div class="row mt-1" style="max-width: 270px;">
+                                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                                        <div align="left" class="col-md-6"><p>active</p></div>
+                                        </div>
+
+                
+                                      <div class="row mt-1" style="max-width: 270px;">
+                                        <div class="col-md-6"><h6 align="left">Описание:</h6></div>
+                                      </div>
+                
+                                      <div style="max-width: 270px;">
+                                        <div> <p align="left"> НАйден джунгарский хомячок. Сегодня возле парка в Центральном районе нашли у лавочки. У себя оставить не можем.
+                                          Пишите если питомец Ваш или Вы хотите завести себе нового друга</p>
+                                        </div>
+                                      </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                    <div class="col-12 col-sm-6 col-lg-3">
+                      <div class="single_pet">
+                        <div class="pet_thumb"><img src="dog4.png" id="animals" alt="animal"></div>
+                        <button type="button" href="postpage.html" class="btn btn-light me-2" style="margin: 10px 10px 10px 10px;">Посмотреть</button>
+      
+                        <div class="single_pet_details_info">
+                          <div class="row mt-1" style="max-width: 270px;">
+                            <div class="col-md-6"><h6 align="left">id:</h6></div>
+                            <div class="col-md-6"><p align="left">421</p></div>
+                            </div>
+                
+                            <div class="row mt-1" style="max-width: 270px;">
+                              <div class="col-md-6"><h6 align="left">Вид животного:</h6></div>
+                              <div class="col-md-6"><p align="left">Собака</p></div>
+                              </div>
+                
+                              <div class="row mt-1" style="max-width: 270px;">
+                                <div class="col-md-6"><h6 align="left">Район:</h6></div>
+                                <div class="col-md-6"><p align="left">Фрунзенский</p></div>
+                                </div>
+                
+                                <div  class="row mt-1" style="max-width: 270px;">
+                                  <div class="col-md-6"><h6 align="left">Дата:</h6></div>
+                                  <div class="col-md-6"><p align="left">16-11-2023</p></div>
+                                  </div>
+                
+                
+                                  <div  class="row mt-1" style="max-width: 270px;">
+                                    <div class="col-md-6"><h6 align="left">Телефон:</h6></div>
+                                    <div class="col-md-6"><p align="left">8-921-758-11-37</p></div>
+                                    </div>
+                
+                
+                                    <div class="row mt-1" style="max-width: 270px;">
+                                      <div class="col-md-6"><h6 align="left">Пост размещен</h6></div>
+                                      <div align="left" class="col-md-6"><a href="#">Юлия Борисовна</a></div>
+                                      </div>
+                
+                
+                                      <div class="row mt-1" style="max-width: 270px;">
+                                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                                        <div align="left" class="col-md-6"><p>active</p></div>
+                                        </div>
+
+
+                                      <div class="row mt-1" style="max-width: 270px;">
+                                        <div class="col-md-6"><h6 align="left">Описание:</h6></div>
+                                      </div>
+                
+                                      <div style="max-width: 270px;">
+                                        <div> <p align="left"> Присмотритесь на этого плюшевого пушистика. Я пристраиваю его в хорошие руки. Не прихотлив в еде, здоровый. Ищем ему новую семью.</p>
+                                        </div>
+                                      </div>
+                
+                
+                        </div>
+                      </div>
+                    </div>
+      
+      
+      
+                    <div class="col-12 col-sm-6 col-lg-3">
+                      <div class="single_pet">
+                        <div class="pet_thumb"><img src="squiruel.png" id="animals" alt="animal"></div>
+                        <button type="button" href="postpage.html" class="btn btn-light me-2" style="margin: 10px 10px 10px 10px;">Посмотреть</button>
+                        <div class="single_pet_details_info">
+                          <div class="row mt-1" style="max-width: 270px;">
+                            <div class="col-md-6"><h6 align="left">id:</h6></div>
+                            <div class="col-md-6"><p align="left">423</p></div>
+                            </div>
+                
+                            <div class="row mt-1" style="max-width: 270px;">
+                              <div class="col-md-6"><h6 align="left">Вид животного:</h6></div>
+                              <div class="col-md-6"><p align="left">Белка</p></div>
+                              </div>
+                
+                              <div class="row mt-1" style="max-width: 270px;">
+                                <div class="col-md-6"><h6 align="left">Район:</h6></div>
+                                <div class="col-md-6"><p align="left">Всеволожский</p></div>
+                                </div>
+                
+                                <div  class="row mt-1" style="max-width: 270px;">
+                                  <div class="col-md-6"><h6 align="left">Дата:</h6></div>
+                                  <div class="col-md-6"><p align="left">05-12-2023</p></div>
+                                  </div>
+                
+                
+                                  <div  class="row mt-1" style="max-width: 270px;">
+                                    <div class="col-md-6"><h6 align="left">Телефон:</h6></div>
+                                    <div class="col-md-6"><p align="left">8-145-25-76-44</p></div>
+                                    </div>
+                
+                
+                                    <div class="row mt-1" style="max-width: 270px;">
+                                      <div class="col-md-6"><h6 align="left">Пост размещен</h6></div>
+                                      <div align="left" class="col-md-6"><a href="#">Виталик Смирнов</a></div>
+                                      </div>
+                
+                                      <div class="row mt-1" style="max-width: 270px;">
+                                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                                        <div align="left" class="col-md-6"><p>active</p></div>
+                                        </div>
+
+
+                                      <div class="row mt-1" style="max-width: 270px;">
+                                        <div class="col-md-6"><h6 align="left">Описание:</h6></div>
+                                      </div>
+                
+                                      <div style="max-width: 270px;">
+                                        <div> <p align="left"> Найдена ручная белка на крыше подъезда Пенсионного фонда. Обращайтесь в кабинет 48, вернём потеряшку. </p>
+                                        </div>
+                                      </div>
+                
+                
+                        </div>
+                      </div>
+                    </div>
+                   
+                        </div>  
+
+                         <!--вставлять-->
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="d-flex justify-content-center" >
+            <nav aria-label="Page navigation example" >
+            <ul class="pagination ">
+            <li class="page-item">
+            <a class="page-link bg-dark text-light" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            </a>
+            </li>
+            <li class="page-item active text-light"><a class="page-link bg-dark" href="#">1</a></li>
+            <li class="page-item"><a class="page-link bg-dark text-light" href="#">2</a></li>
+            <li class="page-item"><a class="page-link bg-dark text-light" href="#">3</a></li>
+            <li class="page-item">
+            <a class="page-link bg-dark text-light" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            </a>
+            </li>
+            </ul>
+            </nav>
+            </div>
+
+
+
+
+  
+        <footer class="py-3  text-bg-dark">
+          <ul class="nav justify-content-center">
+            <li id ="navigation"><a href="index.html" class="nav-link px-2 text-secondary" >Главная</a></li>
+            <li id ="navigation"><a href="signin.html" class="nav-link px-2 text-secondary">Регистрация</a></li>
+            <li id ="navigation"><a href="loginin.html" class="nav-link px-2 text-secondary">Авторизация</a></li>
+            <li id ="navigation"><a href="user.html" class="nav-link px-2 text-secondary">Личный кабинет</a></li>
+            <li id ="navigation"><a href="addpost.html" class="nav-link px-2 text-secondary">Добавить обьявление</a></li>
+            <li id ="navigation"><a href="search.html" class="nav-link px-2 text-secondary">Поиск</a></li>
+          </ul>
+          <p class="text-secondary text-center ">GET PET BACK © Copyright, 2023</p>
+          <p class="text-secondary text-center">Все права защищены</p>
+          <p class="text-secondary text-center">Контакты</p>
+          <div class="d-flex flex-row flex-wrap align-items-center justify-content-center">
+          <div class="d-flex flex-row flex-wrap align-items-center justify-content-center" style="min-width: 300px; width: 45%;">
+
+          <p class="text-secondary p-2 text-center">8 (800)123-45-67</p>
+          <p class="text-secondary p-2 text-center">mail@getpetback.ru</p>
+          </div>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <script src="script.js" type="text/javascript"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ </footer>
+      </body>
+  </html>
+      
+
+<style>
+#pic{
+  width: 250px;
+  height: 160px;
+
+  margin-bottom: 25px;
+}
+.row{
+  text-align: center;
+}
+
+#navigation:hover{
+color: rgb(0, 0, 0);
+border: 1px solid #ffc107;
+border-radius: 5px;
+}
+
+#menu:hover {
+                color: rgb(0, 0, 0);
+                border: 1px solid #ffc107;
+                border-radius: 5px;
+              }
+
+#found{
+  background-color: #ffeaaa   ;
+  height: 80px;
+}
+
+#animals{
+  width: 250px; 
+  height: 150px;
+}
+
+
+#look{
+text-decoration: none;
+
+font-size: 20px;
+}
+
+.single_pet {
+
+    width: auto;
+    background-color:  #ffc107;
+
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+}
+.single_pet .pet_thumb {
+
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    margin: 0 auto;
+    padding: 30px 30px 0 30px;
+    background-color:  #ffc107;
+    overflow: hidden;
+
+}
+
+
+
+.single_pet{
+  height: 950px;
+}
+
+@media only screen and (max-width: 575px) {
+    .single_pet .pet_thumb::after {
+        height: 160px;
+        bottom: -90px;
+    }
+}
+
+
+
+.single_pet .single_pet_details_info {
+    position: relative;
+    padding: 30px;
+    text-align: right;
+    border-radius: 0 0 15px 15px;
+    background-color: #ffffff;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single_pet .single_pet_details_info p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+.single_pet .single_pet_details_info {
+    height: 670px;
+}
+
+
+.single_pet:hover .single_pet_details_info {
+    background-color: #eeeeee;
+}
+
+
+
+#photo{
+  width: 400px; 
+  height: 200px
+}
+
+.dropbtn {
+    background-color: #ffc107;
+    border-radius: 15px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.dropdown, .dropdown1  {
+   
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content, .dropdown-content1 {
+    width: 307px;
+ 
+    display: none;
+    position: absolute;
+    background-color: #ffffffe5;
+    border-radius: 15px;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content1 {
+margin-left: 17px;
+}
+
+.show {display:block;}
+
+
+.form-check{
+    margin: 10px 10px 10px 10px;
+}
+
+
+#region{
+    height: 50px;
+    min-width: 307px;
+    width: 307px;
+    color: #20201e;
+    background-color: #ffffff;
+    border: 1px solid #20201e;
+}
+
+#status{
+    height: 50px;
+    margin-left: 17px;
+    min-width: 307px;
+    width: 307px;
+    background-color: #20201e;
+    color: white;
+}
+
+
+#poisk{
+    height: 50px;
+    margin-left: 17px;
+    min-width: 307px;
+    min-width: 307px;
+    width: 635px;
+}
+</style>          

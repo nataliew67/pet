@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="icon" href="icon.png">
+<title>Личный кабинет</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="p-3 text-bg-dark">
+      <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a class="navbar-brand" href="index.html"><img src="ii.png" class="w-25 rounded-45" alt="logo"></a>
+                  <ul class="nav col-10 col-lg-auto me-lg-auto mb-2 justify-content-center">
+            <li id ="navigation"><a href="index.html" class="nav-link px-2 text-white" >Главная</a></li>
+            <li id ="navigation"><a href="user.html" class="nav-link px-2 text-white">Личный кабинет</a></li>
+            <li id ="navigation"><a href="addpost.html" class="nav-link px-2 text-white">Добавить обьявление</a></li>
+            <li id ="navigation"><a href="search.html" class="nav-link px-2 text-white">Поиск по объявлениям</a></li>
+          </ul>
+
+
+          <form id="search" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark text-bg-dark" list="pets" placeholder="Поиск...">
+            <datalist id="pets">
+              <option value="Кошка">
+              </option><option value="Собака">
+              </option><option value="Крыса">
+              </option><option value="Попугай">
+            </datalist>
+          </form>
+                  <div class="text-end">
+                    <button type="button" id="loginButton" href="loginin.html" class="btn btn-outline-light me-2">Войти</button>
+                    <button type="button" id="signButton" class="btn btn-warning">Зарегистрироваться</button>
+                  </div>
+                  </div>
+            </div>
+          </header>
+
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+          
+            <!-- Font Awesome -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+
+<div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center p-3 py-5"><img id ="avatar" src="avatar.png"></div>
+        </div>
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="text-right text-warning">Личный кабинет</h3>
+                </div>
+
+
+            <div class="row mt-1">
+            <div class="col-md-6"><h6>Имя</h6><p>Александра</p></div>
+            <div class="col-md-6"><h6>Зарегистрирован(а)</h6><p>04-10-2023</p></div>
+            </div>
+
+            <div class="row mt-1">
+            <div class="col-md-6"><h6 >Фамилия</h6><p>Котикова</p></div>
+            <div class="col-md-6"><h6 >Последняя активность</h6><p>14-11-2023</p></div>
+            </div>
+         
+            <div class="row mt-1">
+            <div class="col-md-6"><h6>Пол</h6><p>Женский</p></div>
+            <div class="col-md-6"><h6>Город</h6><p>Санкт-Петербург</p></div>
+
+            </div>
+          
+            <div class="row mt-1">
+            <div class="col-md-6"><h6>Возраст</h6><p>21</p></div>
+            </div>
+    
+            <div class="row mt-1">
+                <div class="col-md-6"><h6>Телефон</h6><p>8-921-751-36-21</p></div>
+                <div class="col-md-6"> <button type="button" class="btn btn-outline-dark"><p id="edit" >  <span class="fas fa-pen p-2 light"></span> Изменить</p></button></div>
+
+               </div>
+
+            <div class="row mt-1">
+                <div class="col-md-6"><h6>E-mail</h6><p>alexandra.koticova@mail.ru</p></div>
+                <div class="col-md-6"> <button type="button" class="btn btn-outline-dark"><p id="edit" >  <span class="fas fa-pen dark"></span>  Изменить</p></button></div>
+
+               </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="text-right text-warning">Обьявления</h3>
+                    <button type="button" class="btn btn-dark"><span><i class="fa fa-plus"></i>&nbsp;Добавить</span></button>
+
+                </div><br>
+                <div class="postbuttons">
+                <button class="btn text-center" id="activ"><a href="#openpost" style="text-decoration: none; color: black" >Активные</a></button>
+                <button class="btn text-center" id="moderation"><a href="#moderationpost" style="text-decoration: none; color: black" >На модерации</a></button>
+                <button class="btn text-center" id="found"><a href="#foundpost" style="text-decoration: none; color: black" >Хозяин найден</a></button>
+                <button class="btn text-center" id="archieve"><a href="#archievepost" style="text-decoration: none; color: black" >В архиве</a></button>
+            </div>
+        </div>
+    </div>
+        <div class="counter">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <div class="text-center">
+                        <h6 class="count h2">5/5</h6>
+                        <h6 class="m-0px text-dark ">Рейтинг пользователя</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="text-center">
+                        <h6 class="count h2">7</h6>
+                        <h6 class="m-0px  text-dark">Кол-во добавленных обьявлений</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="text-center">
+                        <h6 class="count h2" >253</h6>
+                        <h6 class="m-0px text-dark">Кол-во дней, прошедших с момента регистрации на сайте.
+                        </h6>
+                    </div>
+                </div>
+  
+                <div class="col-6 col-lg-3">
+                  <div class="text-center">
+                      <h6 class="count h2" >4</h6>
+                      <h6 class="m-0px text-dark">Кол-во животных, у которых нашлись хозяева из числа тех обьявлений, которые были добавлены текущим пользователем</h6>
+                  </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+<div class="mt-5 text-center"><button class="btn btn-dark" style="width:200px; height:60px; " type="button">Сохранить</button></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--ОТКРЫТЫЕ ОБЬЯВЛЕНИЯ-->
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8 col-lg-6">
+      <div id="closed" class="section_heading text-center">
+        <h3 id="openpost">Активные объявления пользователя</h3>
+        <br>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="single_petopen">
+        <div class="petopen_thumb"><img src="dog1.png" id="animals" alt="animal"></div>
+        <div class="single_petopen_details_info">
+
+          <div align="left" class="row mt-1" style="max-width: 270px;">
+            <div class="col-md-6"> <button type="button" href="loginin.html" class="btn btn-warning me-2">Удалить</button> </div>
+            <div class="col-md-6"><button type="button" id="editButton" href="loginin.html" class="btn btn-warning me-2">Редактировать</button> </div>
+          </div>
+          <br>
+
+
+          <div align="left" class="row mt-1" style="max-width: 270px;">
+            <div class="col-md-6"><h6>id:</h6></div>
+            <div class="col-md-6"><p>348</p></div>
+            </div>
+
+            <div align="left" class="row mt-1" style="max-width: 270px;">
+              <div class="col-md-6"><h6>Вид животного:</h6></div>
+              <div class="col-md-6"><p>Собака</p></div>
+              </div>
+
+              <div align="left" class="row mt-1" style="max-width: 270px;">
+                <div class="col-md-6"><h6>Район:</h6></div>
+                <div class="col-md-6"><p>Невский</p></div>
+                </div>
+
+                <div align="left" class="row mt-1" style="max-width: 270px;">
+                  <div class="col-md-6"><h6>Дата:</h6></div>
+                  <div class="col-md-6"><p>04-12-2023                        </p></div>
+                  </div>
+
+
+                  <div align="left" class="row mt-1" style="max-width: 270px;">
+                    <div class="col-md-6"><h6>Телефон:</h6></div>
+                    <div class="col-md-6"><p>8-921-751-36-21</p></div>
+                    </div>
+
+
+                    <div align="left" class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6>Пост размещен</h6></div>
+                      <div class="col-md-6"><a href="user">Александра Котикова</a></div>
+                      </div>
+
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                        <div align="left" class="col-md-6"><p>active</p></div>
+                        </div>
+
+
+
+                      <div align="left" class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6>Описание:</h6></div>
+                      </div>
+
+                      <div align="left" style="max-width: 270px;">
+                        <div> <p> 
+                          Найден корги! В ночь на 28.10 в районе ул.Лодочной найден корги, мальчик, с хвостом, был без ошейника. Чипирован, есть клеймо.Если кому знаком этот пес ,просьба сообщить по телефону</p>
+                        </div>
+                      </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+<style>
+
+.single_petopen {
+
+  width: auto;
+  background-color:  #ffc107;
+
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+}
+.single_petopen .petopen_thumb {
+
+  position: relative;
+  border-radius: 15px 15px 0 0;
+  margin: 0 auto;
+  padding: 30px 30px 0 30px;
+  background-color:  #ffc107;
+  overflow: hidden;
+
+}
+
+
+
+.single_petopen{
+height: 950px;
+}
+
+@media only screen and (max-width: 575px) {
+  .single_petopen .petopen_thumb::after {
+      height: 160px;
+      bottom: -90px;
+  }
+}
+
+
+
+.single_petopen .single_petopen_details_info {
+  position: relative;
+  padding: 30px;
+  text-align: right;
+  border-radius: 0 0 15px 15px;
+  background-color: #ffffff;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_petopen .single_petopen_details_info p {
+      font-size: 12px;
+  }
+}
+
+
+
+
+.single_petopen .single_petopen_details_info {
+  height: 670px;
+}
+
+
+.single_petopen:hover .single_petopen_details_info {
+  background-color: #eeeeee;
+}
+
+</style>
+
+
+<!--ОБЬЯВЛЕНИЯ НА МОДЕРАЦИИ-->
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8 col-lg-6">
+      <div id="closed" class="section_heading text-center">
+        <h3 id="moderationpost">Объявления на модерации</h3>
+        <br>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="single_petmoder">
+        <div class="petmoder_thumb"><img src="chameleon.png" id="animals" alt="animal"></div>
+        <div class="single_petmoder_details_info">
+
+          <div align="left" class="row mt-1" style="max-width: 270px;">
+            <div class="col-md-6"> <button type="button" href="#" class="btn me-2" style="background-color: #ffdd75;">Удалить</button> </div>
+            <div class="col-md-6"> <button type="button" href="#" class="btn me-2" style="background-color: #ffdd75;">Редактировать</button> </div>
+          </div>
+          <br>
+
+
+          <div align="left" class="row mt-1" style="max-width: 270px;">
+            <div class="col-md-6"><h6>id:</h6></div>
+            <div class="col-md-6"><p>348</p></div>
+            </div>
+
+            <div align="left" class="row mt-1" style="max-width: 270px;">
+              <div class="col-md-6"><h6>Вид животного:</h6></div>
+              <div class="col-md-6"><p>Хамелеон</p></div>
+              </div>
+
+              <div align="left" class="row mt-1" style="max-width: 270px;">
+                <div class="col-md-6"><h6>Район:</h6></div>
+                <div class="col-md-6"><p>Приморский</p></div>
+                </div>
+
+                <div align="left" class="row mt-1" style="max-width: 270px;">
+                  <div class="col-md-6"><h6>Дата:</h6></div>
+                  <div class="col-md-6"><p>05-12-2023</p></div>
+                  </div>
+
+
+                  <div align="left" class="row mt-1" style="max-width: 270px;">
+                    <div class="col-md-6"><h6>Телефон:</h6></div>
+                    <div class="col-md-6"><p>8-921-751-36-21</p></div>
+                    </div>
+
+
+                    <div align="left" class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6>Пост размещен</h6></div>
+                      <div class="col-md-6"><a href="user">Александра Котикова</a></div>
+                      </div>
+
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                        <div align="left" class="col-md-6"><p>onModeration</p></div>
+                        </div>
+
+
+                      <div align="left" class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6>Описание:</h6></div>
+                      </div>
+
+                      <div align="left" style="max-width: 270px;">
+                        <div> <p>Вот такая находку обнаружили сегодня в торговом центре "Атмосфера") Если Вы обладает какой-либо информацией, просьба позвонить или написать на номер телефона, указанный в обьявлении!</p>
+                        </div>
+                      </div>
+
+
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+<style>
+
+.single_petmoder {
+
+  width: auto;
+  background-color:  #ffdd75;
+
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+}
+.single_petmoder .petmoder_thumb {
+
+  position: relative;
+  border-radius: 15px 15px 0 0;
+  margin: 0 auto;
+  padding: 30px 30px 0 30px;
+  background-color:  #ffdd75;
+  overflow: hidden;
+
+}
+
+
+
+.single_petmoder{
+height: 950px;
+}
+
+@media only screen and (max-width: 575px) {
+  .single_petmoder .petmoder_thumb::after {
+      height: 160px;
+      bottom: -90px;
+  }
+}
+
+
+
+.single_petmoder .single_petmoder_details_info {
+  position: relative;
+  padding: 30px;
+  text-align: right;
+  border-radius: 0 0 15px 15px;
+  background-color: #ffffff;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_petmoder .single_petmoder_details_info p {
+      font-size: 12px;
+  }
+}
+
+
+
+
+.single_petmoder .single_petmoder_details_info {
+  height: 670px;
+}
+
+
+.single_petmoder:hover .single_petmoder_details_info {
+  background-color: #eeeeee;
+}
+
+</style>
+
+
+<!--ЗАКРЫТЫЕ ОБЬЯВЛЕНИЯ-->
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8 col-lg-6">
+      <div id="closed" class="section_heading text-center">
+        <h3 id="foundpost">Хозяин найден</h3>
+        <br>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="single_pet">
+        <div class="pet_thumb"><img src="dog2.png" id="animals" alt="animal"></div>
+        <div class="single_pet_details_info">
+          <div align="left" class="row mt-1" style="max-width: 270px;">
+            <div class="col-md-6"><h6>id:</h6></div>
+            <div class="col-md-6"><p>8</p></div>
+            </div>
+
+            <div align="left" class="row mt-1" style="max-width: 270px;">
+              <div class="col-md-6"><h6>Вид животного:</h6></div>
+              <div class="col-md-6"><p>Собака</p></div>
+              </div>
+
+              <div align="left" class="row mt-1" style="max-width: 270px;">
+                <div class="col-md-6"><h6>Район:</h6></div>
+                <div class="col-md-6"><p>Невский</p></div>
+                </div>
+
+                <div align="left" class="row mt-1" style="max-width: 270px;">
+                  <div class="col-md-6"><h6>Дата:</h6></div>
+                  <div class="col-md-6"><p>24-03-2020</p></div>
+                  </div>
+
+
+                  <div align="left" class="row mt-1" style="max-width: 270px;">
+                    <div class="col-md-6"><h6>Телефон:</h6></div>
+                    <div class="col-md-6"><p>8-921-751-36-21</p></div>
+                    </div>
+
+
+                    <div align="left" class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6>Пост размещен</h6></div>
+                      <div class="col-md-6"><a href="user">Александра Котикова</a></div>
+                      </div>
+
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                        <div align="left" class="col-md-6"><p>wasFound</p></div>
+                        </div>
+
+
+                      <div align="left" class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6>Описание:</h6></div>
+                      </div>
+
+                      <div align="left" style="max-width: 270px;">
+                        <div> <p> Найдена собака мальчик, похож на джек рассел, по адресу Витебский пр. 29 к 2 Домашний ,неагресивный, но сильно напуган. Если кому знаком этот пес ,просьба сообщить по телефону</p>
+                        </div>
+                      </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="single_pet">
+        <div class="pet_thumb"><img src="parrot.png" id="animals" alt="animal"></div>
+        <div class="single_pet_details_info">
+          <div align="left" class="row mt-1" style="max-width: 270px;">
+            <div class="col-md-6"><h6>id:</h6></div>
+            <div class="col-md-6"><p>124</p></div>
+            </div>
+
+            <div align="left" class="row mt-1" style="max-width: 270px;">
+              <div class="col-md-6"><h6>Вид животного:</h6></div>
+              <div class="col-md-6"><p>Птица</p></div>
+              </div>
+
+              <div align="left" class="row mt-1" style="max-width: 270px;">
+                <div class="col-md-6"><h6>Район:</h6></div>
+                <div class="col-md-6"><p>Красносельский</p></div>
+                </div>
+
+                <div align="left" class="row mt-1" style="max-width: 270px;">
+                  <div class="col-md-6"><h6>Дата:</h6></div>
+                  <div class="col-md-6"><p>17-09-2022</p></div>
+                  </div>
+
+
+                  <div align="left" class="row mt-1" style="max-width: 270px;">
+                    <div class="col-md-6"><h6>Телефон:</h6></div>
+                    <div class="col-md-6"><p>8-921-751-36-21</p></div>
+                    </div>
+
+
+                    <div align="left" class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6>Пост размещен</h6></div>
+                      <div class="col-md-6"><a href="user">Александра Котикова</a></div>
+                      </div>
+
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                        <div align="left" class="col-md-6"><p>wasFound </p></div>
+                        </div>
+
+
+                      <div align="left" class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6>Описание:</h6></div>
+                      </div>
+
+                      <div align="left" style="max-width: 270px;">
+                        <div> <p>Обнаружен в Южно-Приморском парке Красносельского района Санкт-Петербурга, на дороге от церкви к парку аттракционов. Передвигался в траве, на обочине, иногда взлетал. Откликается на шипящие звуки. Поймать себя не даёт, но видно, что немного ручной.</p>
+                        </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="single_pet">
+        <div class="pet_thumb"><img src="coza.png" id="animals" alt="animal">
+        </div>
+        <div class="single_pet_details_info">
+          <div align="left" class="row mt-1" style="max-width: 270px;">
+            <div class="col-md-6"><h6>id:</h6></div>
+            <div class="col-md-6"><p>226</p></div>
+            </div>
+
+            <div align="left" class="row mt-1" style="max-width: 270px;">
+              <div class="col-md-6"><h6>Вид животного:</h6></div>
+              <div class="col-md-6"><p>Коза</p></div>
+              </div>
+
+              <div align="left" class="row mt-1" style="max-width: 270px;">
+                <div class="col-md-6"><h6>Район:</h6></div>
+                <div class="col-md-6"><p>Всевложский</p></div>
+                </div>
+
+                <div align="left" class="row mt-1" style="max-width: 270px;">
+                  <div class="col-md-6"><h6>Дата:</h6></div>
+                  <div class="col-md-6"><p>18-07-2023</p></div>
+                  </div>
+
+
+                  <div align="left" class="row mt-1" style="max-width: 270px;">
+                    <div class="col-md-6"><h6>Телефон:</h6></div>
+                    <div class="col-md-6"><p>8-921-751-36-21</p></div>
+                    </div>
+
+
+                    <div align="left" class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6>Пост размещен</h6></div>
+                      <div class="col-md-6"><a href="user">Александра Котикова</a></div>
+                      </div>
+
+
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                        <div align="left" class="col-md-6"><p>wasFound</p></div>
+                        </div>
+
+
+                      <div align="left" class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6>Описание:</h6></div>
+                      </div>
+
+                      <div align="left" style="max-width: 270px;">
+                        <div> <p> Во Всевложском районе обнаружена коза, бродившая по улицам района. В данный момент коза находится на привязи.
+
+                          Хозяева, срочно позвоните. </p>
+                        </div>
+
+                      </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="single_pet">
+        <div class="pet_thumb"><img src="kitic.png" id="animals" alt="animal">
+        </div>
+        <div class="single_pet_details_info">
+          <div align="left" class="row mt-1" style="max-width: 270px;">
+            <div class="col-md-6"><h6>id:</h6></div>
+            <div class="col-md-6"><p>335</p></div>
+            </div>
+
+            <div align="left" class="row mt-1" style="max-width: 270px;">
+              <div class="col-md-6"><h6>Вид животного:</h6></div>
+              <div class="col-md-6"><p>Кошка</p></div>
+              </div>
+
+              <div align="left" class="row mt-1" style="max-width: 270px;">
+                <div class="col-md-6"><h6>Район:</h6></div>
+                <div class="col-md-6"><p>Выборгский</p></div>
+                </div>
+
+                <div align="left" class="row mt-1" style="max-width: 270px;">
+                  <div class="col-md-6"><h6>Дата:</h6></div>
+                  <div class="col-md-6"><p>18-09-2023</p></div>
+                  </div>
+
+
+                  <div align="left" class="row mt-1" style="max-width: 270px;">
+                    <div class="col-md-6"><h6>Телефон:</h6></div>
+                    <div class="col-md-6"><p>8-921-751-36-21</p></div>
+                    </div>
+
+
+                    <div align="left" class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6>Пост размещен</h6></div>
+                      <div class="col-md-6"><a href="user">Александра Котикова</a></div>
+                      </div>
+
+
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                        <div align="left" class="col-md-6"><p>wasFound</p></div>
+                        </div>
+
+
+                      <div align="left" class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6>Описание:</h6></div>
+                      </div>
+
+                      <div align="left" style="max-width: 270px;">
+                        <div> <p> В Выборгском районе к нам с мужем выбежал прекрасный котенок, очень просил кушать и гладиться. У нас дома трое своих пушистых, мы полтора часа сидели с ним на улице и не знали что делать. Чистый, ласковый, видно что домашний. Вынесли ему покушать, подумали и взяли на передержку для пристройства.</p>
+                        </div>
+
+                      </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--ОБЬЯВЛЕНИЯ В АРХИВЕ-->
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8 col-lg-6">
+      <div id="closed" class="section_heading text-center">
+        <h3 id="archievepost">Объявления в архиве</h3>
+        <br>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="single_petarchieve">
+        <div class="petarchieve_thumb"><img src="dog3.png" id="animals" alt="animal"></div>
+        <div class="single_petarchieve_details_info">
+
+            <div align="left" class="row mt-1" style="max-width: 270px;">
+            <div class="col-md-6"><h6>id:</h6></div>
+            <div class="col-md-6"><p>348</p></div>
+            </div>
+
+            <div align="left" class="row mt-1" style="max-width: 270px;">
+              <div class="col-md-6"><h6>Вид животного:</h6></div>
+              <div class="col-md-6"><p>Собака</p></div>
+              </div>
+
+              <div align="left" class="row mt-1" style="max-width: 270px;">
+                <div class="col-md-6"><h6>Район:</h6></div>
+                <div class="col-md-6"><p>Ломоносовский</p></div>
+                </div>
+
+                <div align="left" class="row mt-1" style="max-width: 270px;">
+                  <div class="col-md-6"><h6>Дата:</h6></div>
+                  <div class="col-md-6"><p>18-10-2022</p></div>
+                  </div>
+
+
+                  <div align="left" class="row mt-1" style="max-width: 270px;">
+                    <div class="col-md-6"><h6>Телефон:</h6></div>
+                    <div class="col-md-6"><p>8-921-751-36-21</p></div>
+                    </div>
+
+
+                    <div align="left" class="row mt-1" style="max-width: 270px;">
+                      <div class="col-md-6"><h6>Пост размещен</h6></div>
+                      <div class="col-md-6"><a href="user">Александра Котикова</a></div>
+                      </div>
+
+                      <div class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6 align="left">Статус</h6></div>
+                        <div align="left" class="col-md-6"><p>archieve</p></div>
+                        </div>
+
+
+
+                      <div align="left" class="row mt-1" style="max-width: 270px;">
+                        <div class="col-md-6"><h6>Описание:</h6></div>
+                      </div>
+
+                      <div align="left" style="max-width: 270px;">
+                        <div> <p>   Померанский шпиц, девочка, рыжего окраса. На ул. Льва Толстого между домами №№ 24 и 26. Без ошейника и клейма.</p>
+                        </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+
+.single_petarchieve {
+  width: auto;
+  background-color: #eeeeee;
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+}
+.single_petarchieve .petarchieve_thumb {
+
+  position: relative;
+  border-radius: 15px 15px 0 0;
+  margin: 0 auto;
+  padding: 30px 30px 0 30px;
+  background-color: #eeeeee;
+  overflow: hidden;
+}
+
+
+
+.single_petarchieve{
+height: 950px;
+}
+
+@media only screen and (max-width: 575px) {
+  .single_petarchieve .petarchieve_thumb::after {
+      height: 160px;
+      bottom: -90px;
+  }
+}
+
+
+
+.single_petarchieve .single_petarchieve_details_info {
+  position: relative;
+  padding: 30px;
+  text-align: right;
+  border-radius: 0 0 15px 15px;
+  background-color: #ffffff;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_petarchieve .single_petarchieve_details_info p {
+      font-size: 12px;
+  }
+}
+
+.single_petarchieve .single_petarchieve_details_info {
+  height: 670px;
+}
+
+
+.single_petarchieve:hover .single_petarchieve_details_info {
+  background-color: #eeeeee;
+}
+</style>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer class="py-3  text-bg-dark">
+  <ul class="nav justify-content-center">
+    <li id ="navigation"><a href="index.html" class="nav-link px-2 text-secondary" >Главная</a></li>
+    <li id ="navigation"><a href="signin.html" class="nav-link px-2 text-secondary">Регистрация</a></li>
+    <li id ="navigation"><a href="loginin.html" class="nav-link px-2 text-secondary">Авторизация</a></li>
+    <li id ="navigation"><a href="user.html" class="nav-link px-2 text-secondary">Личный кабинет</a></li>
+    <li id ="navigation"><a href="addpost.html" class="nav-link px-2 text-secondary">Добавить обьявление</a></li>
+    <li id ="navigation"><a href="search.html" class="nav-link px-2 text-secondary">Поиск</a></li>
+  </ul>
+  <p class="text-secondary text-center ">GET PET BACK © Copyright, 2023</p>
+  <p class="text-secondary text-center">Все права защищены</p>
+  <p class="text-secondary text-center">Контакты</p>
+  <div class="d-flex flex-row flex-wrap align-items-center justify-content-center">
+  <div class="d-flex flex-row flex-wrap align-items-center justify-content-center" style="min-width: 300px; width: 45%;">
+
+  <p class="text-secondary p-2 text-center">8 (800)123-45-67</p>
+  <p class="text-secondary p-2 text-center">mail@getpetback.ru</p>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</footer>
+</body>
+</html>
+
+<style>
+    #avatar{
+    height: 455px;
+    width: 330px;
+    border-radius: 15px ;
+
+
+}
+.counter{
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+padding: 22px 20px;
+}
+#text{
+  width: 1100px;
+}
+
+.postbuttons button{
+    width: 380px;
+    margin: 10px;
+}
+#edit{
+width:145px;
+height:15px;
+align-items: center;
+padding-bottom: 2px;
+}
+
+#navigation:hover {
+          color: rgb(0, 0, 0);
+          border: 1px solid #ffc107;
+          border-radius: 5px;
+        }
+
+
+#activ{
+background-color: #ffc107;
+height: 80px;
+}
+
+#moderation{
+  background-color: #ffdd75   ;
+  height: 80px;
+}
+
+
+
+#archieve{
+  background-color: #fff6db   ;
+  height: 80px;
+}
+
+#activ:hover, #moderation:hover, #found:hover, #archieve:hover{
+  height: 90px;
+  width: 420px;
+  font-size: 25px;
+}
+
+#found{
+  background-color: #ffeaaa   ;
+  height: 80px;
+}
+
+#animals{
+  width: 250px; 
+  height: 150px;
+}
+
+
+#look{
+text-decoration: none;
+font-size: 20px;
+}
+
+.single_pet {
+    width: auto;
+    background-color: #212529;
+
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+}
+.single_pet .pet_thumb {
+
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    margin: 0 auto;
+    padding: 30px 30px 0 30px;
+    background-color: #212529;
+    overflow: hidden;
+}
+
+.single_pet{
+  height: 950px;
+}
+
+@media only screen and (max-width: 575px) {
+    .single_pet .pet_thumb::after {
+        height: 160px;
+        bottom: -90px;
+    }
+}
+
+
+
+.single_pet .single_pet_details_info {
+    position: relative;
+    padding: 30px;
+    text-align: right;
+    border-radius: 0 0 15px 15px;
+    background-color: #ffffff;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single_pet .single_pet_details_info p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+.single_pet .single_pet_details_info {
+    height: 670px;
+}
+
+
+.single_pet:hover .single_pet_details_info {
+    background-color: #eeeeee;
+}
+
+</style>
